@@ -1,14 +1,18 @@
 // Обнуление
-@import 'reset';
+@import "reset";
 
 // Подключение шрифтов
-@import 'fonts';
+@import "fonts";
 
+$lg: 1336px;
+$md: 1199px;
+$sm: 991px;
+$xs: 768px;
 // Миксины
 
-// Адаптивный шрифт 
-// Указать величину шрифта на минимальном экране и на макетном размере 
-$maxWidth: 1280; 
+// Адаптивный шрифт
+// Указать величину шрифта на минимальном экране и на макетном размере
+$maxWidth: 1280;
 @mixin adaptive-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
 	$maxWidth: $maxWidth - 320;
@@ -16,21 +20,33 @@ $maxWidth: 1280;
 }
 
 // Общие стили
-html{
-
+html {
 }
 
-body{
+body {
+	font-family: "Montserrat" sans-serif;
+}
 
+input[placeholder] {
+	text-overflow: ellipsis;
+}
+input::-moz-placeholder {
+	text-overflow: ellipsis;
+}
+input:-moz-placeholder {
+	text-overflow: ellipsis;
+}
+input:-ms-input-placeholder {
+	text-overflow: ellipsis;
 }
 
 // Подключение общих блоков
-@import 'blocks';
+@import "blocks";
 
 // Header
-@import 'header';
+@import "header";
+
+@import "login";
 
 // Footer
-@import 'footer';
-
-
+@import "footer";

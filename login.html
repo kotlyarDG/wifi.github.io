@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Tittle -->
+	<title>Tittle</title>
+
+	<!-- Кодировка -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	<!-- Настройки вьюпорта для адекватного адаптива -->
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Подключение CSS файлов -->
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<!-- Внешняя оболочка -->
+	<div class="wrapper">
+		<div class="head">
+			<a href="#" class="head__logo">
+				<img src="images/system_img/logo_white.png" alt="logo">
+			</a>
+			<div class="head__body">
+				<h1 class="head__title title">Заголовок 1</h1>
+				<h2 class="head__subtitle subtitle">Заголовок 2</h2>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main__buttons">
+				<a href="#" class="main__btn main__btn--active">Вход</a>
+				<a href="#" class="main__btn">Регистрация</a>
+			</div>
+			<div class="main__body body-main">
+				<p class="body-main__title">Авторизация</p>
+				<form action="" class="body-main__form">
+					<input type="text" class="body-main__input input-text input-login"
+						placeholder="Логин или адрес электронной почты">
+					<div class="password-field">
+						<input type="password" class="body-main__input input-password" placeholder="Пароль">
+						<a href="#" class="password-field__link"></a>
+					</div>
+					<button name="submit" class="body-main__btn">Войти</button>
+					<div class="body-main__row">
+						<input type="checkbox" id="remember-me" name="remember-me" value="remember">
+						<label class="body-main__label" for="remember-me">Запомнить меня</label>
+						<a href="#" class="body-main__forget">Забыли пароль?</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Подключение JS файлов -->
+	<!-- Jquery -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+
+	<!-- Main script file -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

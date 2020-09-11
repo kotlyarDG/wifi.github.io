@@ -1,0 +1,247 @@
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	@media (max-width: $md) {
+		display: block;
+		height: auto;
+	}
+}
+.head {
+	height: 100vh;
+	width: 45%;
+	padding: 116px 0 0 0;
+	background: linear-gradient(160.93deg, #860162 -0.53%, #190051 102.7%);
+	box-shadow: 2px 0px 60px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (max-width: $md) {
+		height: auto;
+		width: 100%;
+		padding: 50px 0 70px 0;
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 5;
+	}
+
+	&__body {
+		margin: -65px 0 0 0;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: $md) {
+			margin: 30px 0 0 0;
+		}
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+	}
+}
+.title {
+	font-weight: bold;
+	@include adaptive-font(68, 55);
+	line-height: 122%;
+	color: #fff;
+}
+.subtitle {
+	font-weight: 300;
+	@include adaptive-font(34, 32);
+	line-height: 122%;
+
+	color: #ffffff;
+}
+
+.main {
+	width: 55%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0 0 0;
+	overflow-y: auto;
+
+	@media (max-width: $md) {
+		height: auto;
+		width: 100%;
+		padding: 50px 0 70px 0;
+	}
+
+	&__buttons {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__btn {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 142px;
+		height: 42px;
+		box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.15);
+		border-radius: 9px;
+		color: #3f0057;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		border: 2px solid #3f0057;
+		background: #ffffff;
+
+		&:first-child {
+			margin: 0 30px 0 0;
+
+			@media (max-width: 580px) {
+				margin: 0 15px 0 0;
+			}
+		}
+	}
+
+	&__btn--active {
+		color: #ffffff;
+		background: linear-gradient(99.05deg, #840062 8.04%, #1d0051 94.63%);
+	}
+
+	&__body {
+	}
+}
+.body-main {
+	padding: 20px 0 0 0;
+	flex: 1 1 auto;
+	width: 540px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media (max-width: $md) {
+		margin: 35px 0 0 0;
+	}
+	@media (max-width: 580px) {
+		width: 420px;
+	}
+	@media (max-width: 580px) {
+		width: 290px;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 51px;
+
+		color: #3f0057;
+		margin: 0 0 18px 0;
+	}
+
+	&__form {
+	}
+
+	&__input {
+		margin: 0 0 19px 0;
+		padding: 0 0 0 84px;
+		background: #f2f2f2;
+		box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+		height: 54px;
+		width: 100%;
+		font-size: 20px;
+		line-height: 24px;
+
+		color: #45074f;
+
+		&::placeholder {
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 24px;
+
+			color: #45074f;
+
+			opacity: 0.7;
+		}
+	}
+
+	&__btn {
+		display: block;
+		margin: 0 0 30px 0;
+		padding: 15px 0 15px 0;
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 27px;
+
+		color: #ffffff;
+
+		background: linear-gradient(92.16deg, #860162 -11.61%, #190051 128.16%);
+		box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+	}
+
+	&__row {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	&__label {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 22px;
+		margin: 0 0 0 5px;
+		color: #1d0051;
+		flex: 1 1 auto;
+	}
+	&__forget {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 22px;
+
+		color: #1d0051;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 22px;
+
+		color: #1d0051;
+		margin: 0 0 20px 0;
+	}
+}
+.input-text {
+}
+.input-login {
+	background: url("../images/system_img/login-icon.svg") 15px 0px no-repeat;
+}
+.input-phone {
+	background: url("../images/system_img/phone-icon.svg") 20px 0px no-repeat;
+}
+.input-email {
+	background: url("../images/system_img/email-icon.svg") 20px 0px no-repeat;
+}
+.input-company {
+	background: url("../images/system_img/company-icon.svg") 20px 0px no-repeat;
+}
+.password-field {
+	position: relative;
+	&__link {
+		position: absolute;
+		top: 11px;
+		right: 28px;
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		background: url("../images/system_img/password-hide.svg") 0 0 no-repeat;
+
+		@media (max-width: 580px) {
+			right: 10px;
+		}
+	}
+}
+.input-password {
+	background: url("../images/system_img/password-icon.svg") 17px 0px no-repeat;
+}
