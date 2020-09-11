@@ -225,6 +225,15 @@ input:-ms-input-placeholder {
   line-height: 17px;
   border: 2px solid #3f0057;
   background: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main__btn:hover {
+  -webkit-transform: translate(0, -5px) scale(1.05);
+      -ms-transform: translate(0, -5px) scale(1.05);
+          transform: translate(0, -5px) scale(1.05);
 }
 
 .main__btn:first-child {
@@ -352,6 +361,15 @@ input:-ms-input-placeholder {
   -webkit-box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.25);
           box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.body-main__btn:hover {
+  -webkit-transform: translate(0, -5px) scale(1.05);
+      -ms-transform: translate(0, -5px) scale(1.05);
+          transform: translate(0, -5px) scale(1.05);
 }
 
 .body-main__row {
