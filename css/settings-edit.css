@@ -737,7 +737,6 @@ svg rect {
 }
 
 .item-content__title {
-  margin: 0 0 35px 0;
   font-weight: 700;
   font-size: calc(26px + 4 * ((100vw - 320px) / 1580));
   line-height: 121%;
