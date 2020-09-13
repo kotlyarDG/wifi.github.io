@@ -146,6 +146,7 @@ svg rect {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 150px;
             flex: 0 0 150px;
+    padding: 50px 0px;
   }
 }
 
@@ -185,6 +186,10 @@ svg rect {
   margin: 0 0 13px 0;
 }
 
+.person__photo img {
+  max-width: 100%;
+}
+
 .person__name {
   font-size: 18px;
   line-height: 22px;
@@ -213,9 +218,6 @@ svg rect {
 
 @media (max-width: 769px) {
   .menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     width: auto;
     margin: 30px 0;
     padding: 0 10px;
