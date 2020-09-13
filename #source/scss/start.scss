@@ -1,0 +1,98 @@
+@import "reset";
+$lg: 1336px;
+$md: 1199px;
+$sm: 991px;
+$xs: 769px;
+// Миксины
+
+// Адаптивный шрифт
+// Указать величину шрифта на минимальном экране и на макетном размере
+$maxWidth: 1900;
+@mixin adaptive-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+body {
+	font-family: "Montserrat" sans-serif;
+}
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(160.93deg, #860162 -0.53%, #190051 102.7%);
+	padding: 5vh 0;
+}
+.logo {
+	align-self: center;
+	img {
+		max-width: 100%;
+	}
+}
+.main {
+	display: flex;
+	padding: 0 2vw;
+	flex: 1 1 auto;
+	align-items: center;
+
+	@media (max-width: $xs) {
+		flex-direction: column;
+	}
+
+	&__head {
+		flex: 1 1 auto;
+
+		@media (min-width: $xs) {
+			flex: 1 1 auto;
+			text-align: center;
+			transform: translate(55px, 0);
+		}
+
+		@media (max-width: $xs) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		@include adaptive-font(63, 55);
+		line-height: 122%;
+		text-align: center;
+
+		color: #ffffff;
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		font-size: 34px;
+		line-height: 41px;
+		text-align: center;
+
+		color: #ffffff;
+	}
+
+	&__start {
+	}
+
+	&__start-img {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__start-text {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+
+		color: #ffffff;
+	}
+}
