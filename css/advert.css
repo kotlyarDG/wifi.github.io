@@ -684,18 +684,7 @@ svg rect {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 0 15px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow-x: auto;
-}
-
-@media (min-width: 1240px) {
-  .content__body {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 
 .content__item {
@@ -724,10 +713,8 @@ svg rect {
   font-size: 20px;
   line-height: 24px;
   color: #212121;
-  display: inline-block;
-  margin: 0 0 10px 0;
-  white-space: nowrap;
   padding: 0 5px;
+  margin: 0 5px;
 }
 
 .content__text--data {
@@ -799,4 +786,20 @@ svg rect {
   color: #ffffff;
   background: #69005d;
   border-radius: 50%;
+}
+
+.table-content {
+  width: 100%;
+}
+
+.table-content__row {
+  width: 100%;
+}
+
+.table-content__head {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1d0051;
+  margin: 0 0 25px 0;
 }
